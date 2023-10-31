@@ -21,6 +21,8 @@ body {
 .main1 img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  height: 400px;
+  width: 260px;
 }
 .main2 {
   width: 210px;
@@ -87,4 +89,58 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main1 {
+    width: 267px;
+    height: 200px;
+  }
+  .main1 img {
+    width: 267px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .main2 {
+    width: 217px;
+    height: 285px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+  .pef {
+    font-size: x-small;
+  }
+  .parfum {
+    font-size: x-large;
+    line-height: 25px;
+  }
+  .floral {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .price {
+    font-size: x-large;
+  }
+  .original {
+    font-size: x-small;
+  }
+  .cart {
+    font-size: x-small;
+  }
+  button {
+    height: 35px;
+    width: 220px;
+  }
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
 }
