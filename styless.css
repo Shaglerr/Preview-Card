@@ -2,6 +2,9 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+body {
+  background-color: hsl(30, 38%, 92%);
+}
 .main {
   display: flex;
   flex-direction: row;
@@ -52,7 +55,7 @@
 }
 .original {
   text-align: right;
-  font-size: x-small;
+  font-size: small;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
   padding-left: 20px;
@@ -69,9 +72,19 @@ button {
   border: none;
   border-radius: 5px;
 }
+.button:hover {
+  background-color: hsl(160, 48%, 12%);
+}
 .cart {
   padding-left: 10px;
 }
 .icon {
   padding-left: 15px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
