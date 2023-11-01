@@ -18,11 +18,14 @@ body {
   width: 260px;
   height: 400px;
 }
-.main1 img {
+.desktop {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 400px;
   width: 260px;
+}
+.mobile {
+  display: none;
 }
 .main2 {
   width: 210px;
@@ -90,7 +93,7 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -101,12 +104,15 @@ button {
     width: 267px;
     height: 200px;
   }
-  .main1 img {
-    width: 267px;
-    height: 200px;
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
+    height: 200px;
+    width: 267px;
   }
   .main2 {
     width: 217px;
